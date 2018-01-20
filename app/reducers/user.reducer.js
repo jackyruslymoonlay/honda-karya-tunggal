@@ -7,32 +7,17 @@ export default function reducer(state = {
     fetched: false,
     error: null
 }, action) {
-    let newState = Object.assign({}, state);
-
     switch (action.type) {
         case "FETCH_USER_PENDING": {
-            newState.fetching = true;
-            newState.fetched = false;
-            break;
+            return { ...state, fetching: true, fetched: false };
         }
         case "FETCH_USER_REJECTED": {
-            newState.data = {
-                id: null,
-                name: null
-            };
-            newState.fetching = false;
-            newState.fetched = false;
-            newState.error = action.payload;
-            break;
+            return { ...state, data: { id: null, name: null }, fetching: false, fetched: false, error: action.payload };
         }
         case "FETCH_USER_FULFILLED": {
-            newState.data = action.payload;
-            newState.fetching = false;
-            newState.fetched = true;
-            newState.error = null;
-            break;
+            return { ...state, data: action.payload, fetching: false, fetched: true, error: null };
         }
     }
 
-    return newState;
+    return state;
 }
