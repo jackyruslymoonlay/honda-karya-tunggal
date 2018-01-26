@@ -1,0 +1,48 @@
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ff8a80 , #d50000);
+    
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    animation-name: color_change;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@-webkit-keyframes color_change {
+	from { color: white; }
+	to { color: black; }
+}
+@-moz-keyframes color_change {
+	from { color: white; }
+	to { color: black; }
+}
+@-ms-keyframes color_change {
+	from { color: white; }
+	to { color: black; }
+}
+@-o-keyframes color_change {
+	from { color: white; }
+	to { color: black; }
+}
+@keyframes color_change {
+	from { color: white; }
+	to { color: black; }
+}

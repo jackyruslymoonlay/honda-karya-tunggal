@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from "./components/Header.Component";
-import AppRouter from "./components/AppRouter.Component";
-import Footer from "./components/Footer.Component";
+import Header from './components/header/header.component';
+import AppRouter from './components/app-router/app-router.component';
+import Footer from './components/footer/footer.component';
 
 class App extends React.Component {
     render() {

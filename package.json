@@ -25,6 +25,7 @@
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-preset-env": "^1.6.1",
         "babel-preset-react": "^6.24.1",
+        "node-sass": "^4.7.2",
         "parcel-bundler": "^1.4.1",
         "redux-logger": "^3.0.6"
     }

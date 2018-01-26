@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from "react-redux";
 import { fetchUser } from "../actions/user.actions";
-import Home from "../components/Home.Component";
 
 @connect((store) => {
     return {
