@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from "react-redux";
 import { fetchUser } from "../actions/user.actions";
+import Home from "../components/app-router/home/home.component";
 
 @connect((store) => {
     return {
